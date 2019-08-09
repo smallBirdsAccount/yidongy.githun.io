@@ -1,0 +1,9 @@
+.idea
+.svn
+target
+.classpath
+.project
+.settings
+*.iml
+_book
+node_modules
