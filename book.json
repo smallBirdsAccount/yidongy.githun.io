@@ -1,0 +1,48 @@
+{
+	"title": "蘑菇技术说明文档",
+	"author": "蘑菇全体技术同学",
+	"description": "蘑菇相关技术、项目等的说明文档",
+	"language": "zh-hans",
+	"direction": "ltr",
+	"root": ".",
+	"links": {
+	    "sidebar": {
+	        "蘑菇云博客": "https://blog.moguyun.com/"
+	    }
+	},
+	"structure": {
+		"readme": "README.md"
+	},
+	"variables": {},
+	"plugins": [
+		"-sharing",
+	    "highlight",
+	    "livereload",
+	    "back-to-top-button",
+	    "chapter-fold",
+	    "code",
+	    "copy-code-button",
+	    "-lunr", 
+        "-search", 
+        "search-pro",
+        "advanced-emoji",
+        "splitter",
+        "tbfed-pagefooter",
+        "pageview-count",
+        "lightbox"
+	],
+	"pluginsConfig": {
+        "tbfed-pagefooter": {
+            "copyright": "https://www.moguyun.com/",
+            "modify_label": "修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "code": {
+	        "copyButtons": true
+	    },
+	    "chapter-fold":{},
+	    "hide-element": {
+            "elements": [".gitbook-link"]
+        }
+    }
+}

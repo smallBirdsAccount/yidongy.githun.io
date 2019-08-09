@@ -1,0 +1,9 @@
+/* 保持菜单首行缩进一致 */
+.book .book-summary ul.summary li a.custom-link{
+	padding-left: 15px;
+}
+
+/* 隐藏底部的gitbook广告, 测试配置book.json隐藏元素不起作用 */
+.book-summary ul.summary li a.gitbook-link{
+	display: none;
+}
