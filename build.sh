@@ -5,11 +5,10 @@ git checkout master
 if [! -f ".gitignore" ]; then
 	echo "_book" >> .gitignore
 	echo "node_modules" >> .gitignore
-else
+else 
 	# 检查忽略配置文件是否已配置忽略打包信息
-
+	echo 'dev'
 fi
-
 # 提交代码, 接收用户输入commit信息
 git add .
 read -p "Enter git commit message, please: " message
