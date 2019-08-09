@@ -2,7 +2,7 @@
 git checkout master
 
 # 检查git忽略配置文件是否存在
-if [! -f ".gitignore" ]; then
+if [ ! -f ".gitignore" ]; then
 	echo "_book" >> .gitignore
 	echo "node_modules" >> .gitignore
 else 
@@ -17,7 +17,7 @@ git push
 
 # 根据输入参数判断是否进行静态文件打包
 branch = $(git branch | grep $1)
-if [! -n "$branch"]; then
+if [ ! -n "$branch" ]; then
     
 else
     if [ -n "$branch" ]; then
