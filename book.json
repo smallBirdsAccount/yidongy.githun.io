@@ -1,13 +1,13 @@
 {
-	"title": "蘑菇技术说明文档",
-	"author": "蘑菇全体技术同学",
-	"description": "蘑菇相关技术、项目等的说明文档",
+	"title": "dx的博客",
+	"author": "yyd、hcx",
+	"description": "技术博客文档",
 	"language": "zh-hans",
 	"direction": "ltr",
 	"root": ".",
 	"links": {
 	    "sidebar": {
-	        "蘑菇云博客": "https://blog.moguyun.com/"
+	        "个人主页": "https://www.baidu.com"
 	    }
 	},
 	"structure": {
@@ -33,7 +33,7 @@
 	],
 	"pluginsConfig": {
         "tbfed-pagefooter": {
-            "copyright": "https://www.moguyun.com/",
+            "copyright": "https://dxnote.cn/",
             "modify_label": "修订时间：",
             "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
