@@ -13,7 +13,7 @@
     * [2.7.-AngularJs](docs/web前端/AngularJs/README.md)
 * [三. Java后端](docs/Java后端/README.md)
     * [3.1.-集合类](docs/Java后端/集合类/README.md)
-    * [3.1.1.-List](docs/Java后端/List/list.md)
+        * [3.1.1.-List](docs/Java后端/List/list.md)
         * [3.1.1.-Map](docs/Java后端/Map/map.md)
     * [3.2.-多线程](docs/Java后端/多线程/README.md)
     * [3.3.-微服务](docs/Java后端/微服务/README.md)
