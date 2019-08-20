@@ -89,5 +89,4 @@ if [ "$command" == "$buildCommand" ]; then
 	git push
 	# 切回master分支
 	git checkout master
-if
-
+fi
