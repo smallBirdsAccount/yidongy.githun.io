@@ -63,6 +63,10 @@ if [ "$command" != "$commitCommand" -a "$command" != "$buildCommand" -a "$comman
 	exit 0
 fi 
 
+# 不输入命令时默认为commit
+if [ "$command" == "" ]; then 
+	command="$commitCommand"
+fi
 echo "The choose command is : $command"
 read -p "Enter git commit message, please: " message
 
