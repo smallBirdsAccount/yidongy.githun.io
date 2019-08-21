@@ -30,7 +30,7 @@ function commitCode {
 
 # 判断gh-page分支是否存在, 不存在进行创建
 function checkBranch {
-	br = $(git branch | grep "$pageBranch")
+	br=$(git branch | grep "$pageBranch")
 	if [ ! -n "$br" ]; then
 	    echo "branch $pageBranch is not exist, create branch";
 	    # 进行分支创建, 并提交远程仓库
