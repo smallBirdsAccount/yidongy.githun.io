@@ -71,7 +71,7 @@ echo "The choose command is : $command"
 read -p "Enter git commit message, please: " message
 
 # 提交代码
-commitCode message
+commitCode $message
 
 # 判断是否执行打包操作
 if [ "$command" == "$buildCommand" ]; then
@@ -80,12 +80,12 @@ if [ "$command" == "$buildCommand" ]; then
 	# 打包文件
 	gitbook build
 	# 切换分支
-	git checkout $branch
+	git checkout $pageBranch
 	# 提交静态文件
 	mv ./_book/* ./
 	rm -rf ./_book
 	git add .
-	git commit -m '$message'
+	git commit -m $message
 	git push
 	# 切回master分支
 	git checkout master
