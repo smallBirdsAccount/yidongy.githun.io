@@ -35,6 +35,7 @@ function checkBranch {
 	    echo "branch $pageBranch is not exist, create branch";
 	    # 进行分支创建, 并提交远程仓库
 	    git branch $pageBranch
+	    git push --set-upstream origin $pageBranch
 	    git checkout $pageBranch
 	    git push origin
 	    addGitIgnore _book node_modules
