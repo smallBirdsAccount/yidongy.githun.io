@@ -11,6 +11,13 @@ buildCommand=build 		# 打包命令
 
 ################## 可用函数 ##################
 
+# 提交代码
+function commitCode {
+	git add "$0"
+	git commit -m "$1"
+	git push
+}
+
 # 检查git忽略配置文件是否存在
 function addGitIgnore {
 	if [ ! -f ".gitignore" ]; then
@@ -18,14 +25,8 @@ function addGitIgnore {
 		do
 		   	echo $p >> .gitignore
 		done
+		commitCode .gitignore "add .gitignore"
 	fi
-}
-
-# 提交代码
-function commitCode {
-	git add .
-	git commit -m "$0"
-	git push
 }
 
 # 判断gh-page分支是否存在, 不存在进行创建
@@ -39,7 +40,7 @@ function checkBranch {
 	    git checkout $pageBranch
 	    git push origin
 	    addGitIgnore _book node_modules
-	    commitCode "init branch $pageBranch, add .gitignore"
+	    commitCode . "init branch $pageBranch"
 	fi
 }
 ################## 可用函数 ##################
@@ -72,7 +73,7 @@ echo "The choose command is : $command"
 read -p "Enter git commit message, please: " message
 
 # 提交代码
-commitCode $message
+commitCode . $message
 
 # 判断是否执行打包操作
 if [ "$command" == "$buildCommand" ]; then
